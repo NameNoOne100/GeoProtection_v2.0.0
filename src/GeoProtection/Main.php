@@ -17,7 +17,7 @@
       touch("logs.txt");
       touch("reason.txt");
       touch("message.txt");
-      file_put_contents("users.txt", "user: ");
+      file_put_contents("users.txt", "user: \n");
       file_put_contents("users.txt", "city: ", FILE_APPEND);
       file_put_contents("logs.txt", "logs:\n");
       file_put_contents("reason.txt", "reason: ");
