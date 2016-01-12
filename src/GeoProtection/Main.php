@@ -9,7 +9,8 @@
   class Main extends PluginBase implements Listener {
   
     public function onEnable() {
-    
+
+      $this->getServer()->getPluginManager()->registerEvents($this, $this);
       @mkdir($this->getDataFolder());
       chdir($this->getDataFolder());
       touch("users.txt");
